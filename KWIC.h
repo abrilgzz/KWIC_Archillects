@@ -25,20 +25,20 @@ February 2019
 
 #include <iostream>
 #include <string>
-#include <stack>
 #include <cctype>
 #include <stdlib.h>
 #include <vector>
 #include <algorithm>
 #include <stdio.h>
 #include <sstream>
+#include <fstream>
 
 using namespace std;
 
 class KWIC{
     public:
     string inputFile;
-    vector<string> inputLines;
+    vector<vector<string>> inputLines;
     vector<string> outputLines;
 
     //Constructor
@@ -46,11 +46,41 @@ class KWIC{
         this->inputFile = inputFile;
     }
 
+    private:
     // Get lines from file
+    void readLines(){
+        ifstream ifs(this->inputFile);
+        string linea;
+        vector<string> palabras;
+
+        if(ifs.is_open()){
+            getline(ifs, linea);
+            stringstream ss(linea);
+            string palabra;
+            while(ss >> palabra){
+                palabras.push_back(palabra);
+                if(ss.peek() == ' ')
+                    ss.ignore();
+            }
+        }
+        else{
+            cout << "Error al abrir el archivo." << endl;
+        }
+    }
 
     //Circular shift
+    void circularShift(){
+
+    }
 
     // Sort alphabetically
+    void sortAlphabetically(){
+
+    }
 
     // Print
+    void printLines(){
+
+    }
+
 }

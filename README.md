@@ -2,7 +2,7 @@
 Abril Marina González Ramírez A01280904\
 Juan Luis Flores Garza A01280767\
 Sergio Díaz Navarro\
-Miguel Bazán Aviña\
+Miguel Bazán Aviña A01281010\
 
 # KWIC_Archillects
 KeyWord-In-Context (KWIC) system - Software Design and Architecture Activity

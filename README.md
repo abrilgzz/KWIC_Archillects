@@ -2,7 +2,7 @@
 Abril Marina González Ramírez A01280904\
 Juan Luis Flores Garza A01280767\
 Sergio Díaz Navarro\
-Miguel Bazán Aviña\
+Miguel Bazán Aviña
 
 # KWIC_Archillects
 KeyWord-In-Context (KWIC) system - Software Design and Architecture Activity
@@ -42,16 +42,13 @@ Example of KWIC operation
 
 
 ## How to Run
-Compile in terminal\
-	`gcc -o programKWIC programKWIC.cpp`
+Compile and run from terminal\
+	`g++ main.cpp -o KWIC`\
+	`./KWIC`
 
 Write input\
-	`> inputText.txt`
+	`example.txt`
 
-
-Un documento que incluya: la arquitectura de su programa, puede utilizar el paradigma 4+1 views para
-describir su arquitectura. Instrucciones de como compilar y/o ejecutar su código. E información que considere
-necesaria para entender su proyecto.
 
 
 

@@ -31,12 +31,16 @@ Example of KWIC operation
 ## Software Architecture
 
 ### Logic View
+![](ClassDiagram.png)
 
 ### Process View
+![](ProcessView.png)
 
-### Implementation View
+### Development View
+![](DevelopmentView.png)
 
 ### Physical View
+![](PhysicalView.png)
 
 ### Scenario View
 ![](ScenarioView.png)

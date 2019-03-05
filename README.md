@@ -39,7 +39,7 @@ Example of KWIC operation
 ### Physical View
 
 ### Scenario View
-
+![](ScenarioView.png)
 
 ## How to Run
 Compile and run from terminal\
@@ -49,6 +49,8 @@ Compile and run from terminal\
 Write input\
 	`example.txt`
 
+## Result
+![](image.png)
 
 
 

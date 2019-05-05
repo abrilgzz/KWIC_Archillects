@@ -27,23 +27,29 @@ Example of KWIC operation
 		pittsburgh is beautiful\
 		white clouds are
 
+# Version 2
+## **Update:** 
+- Allows the user to enter a list of stop words (words to be deleted from lines)
+- Select which type of sorting (ascending or descending)
+- Delete lines from input
+- Delete lines from output
 
 ## Software Architecture
 
 ### Logic View
-![](ClassDiagram.png)
+![](diagrams/ClassDiagram_v2.png)
 
 ### Process View
-![](ProcessView.png)
+![](diagrams/ProcessView_v2.png)
 
 ### Development View
-![](DevelopmentView.png)
+![](diagrams/DevelopmentView.png)
 
 ### Physical View
-![](PhysicalView.png)
+![](diagrams/PhysicalView.png)
 
 ### Scenario View
-![](ScenarioView.png)
+![](/diagrams/ScenarioView_v2.png)
 
 ## How to Run
 Compile and run from terminal\
@@ -53,8 +59,26 @@ Compile and run from terminal\
 Write input\
 	`example.txt`
 
+Enter stop words.\
+_Type "end" to finish stop words._\
+	`white`\
+	`end`
+
+Enter lines from input to delete.\
+_Type "-1" to finish._\
+	`0`\
+	`-1`
+
+Select which kind of sort\
+_(Ascending order = 0, Descending order = 1)_\
+	`0`
+
+Enter lines from output to delete.\
+_Type "-1" to finish._\
+	`-1`
+
 ## Result
-![](image.png)
+![](image_v2.png)
 
 
 

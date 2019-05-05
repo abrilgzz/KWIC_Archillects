@@ -1,0 +1,25 @@
+/'
+ More about plant UML: http://plantuml.com/class-diagram
+'/
+
+@startuml
+
+class Alphabetizer {
+}
+
+class Output {
+}
+
+class Input {
+}
+
+class CircularShift {
+}
+
+
+Input -> "1" CircularShift
+CircularShift -> "1" Alphabetizer
+Alphabetizer -> "*" Alphabetizer
+Alphabetizer -> "1" Output
+
+@enduml

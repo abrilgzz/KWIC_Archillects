@@ -9,7 +9,7 @@ Abril Marina González Ramírez
 Sergio Díaz Navarro
 Miguel Bazán Aviña
 
-March 2019
+May 2019
 */
 
 #ifndef Output_h
@@ -25,12 +25,40 @@ using namespace std;
 
 class Output {
 public:
+  vector<string> outputLines;
 
   // Constructor
   Output(vector<string> &lines) {
-    cout << "Final output: " << endl;
-    for(int i=0; i < lines.size(); i++) {
-      cout << lines[i] << endl;
+    this->outputLines = lines;
+  }
+
+  void deleteOutputLines(){
+    vector <int> linesToDelete;
+    int lineNumber = 0;
+
+    // Get user input of lines to be deleted
+    cout << "\nWhich line numbers do you want to delete from the Output? Indexing from 0 to n" << endl;
+    cout << "Type \"-1\" to finish line numbers." << endl; 
+
+    while(cin >> lineNumber){
+      if(lineNumber == -1)
+        break;
+      else {
+        linesToDelete.push_back(lineNumber);
+      }
+    }
+
+    // Delete lines from inputLines
+    for(int i=0; i < linesToDelete.size(); i++){
+      this->outputLines.erase(this->outputLines.begin() + linesToDelete[i]);
+    }
+  }
+
+  // Prints remaining lines from outputLines
+  void printResult(){
+    cout << "\nFinal output: " << endl;
+    for(int i=0; i < this->outputLines.size(); i++) {
+      cout << this->outputLines[i] << endl;
     }
   }
 

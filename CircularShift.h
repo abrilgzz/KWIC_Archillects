@@ -10,7 +10,7 @@ Abril Marina González Ramírez
 Sergio Díaz Navarro
 Miguel Bazán Aviña
 
-March 2019
+May 2019
 
 */
 #ifndef CircularShift_h
@@ -39,17 +39,15 @@ public:
 
   // Function that converts a string to a vector
   vector<string> stringToVector(string sentence) {
-    stringstream ss(sentence);
+    istringstream ss(sentence);
     vector<string> wordVector;
     string word;
 
-    while(!ss.eof()){
-      ss >> word;
+    while(ss >> word, !ss.eof()){
       // Transform to lower case all chars
       for(int i=0; i < word.length(); i++) {
           word[i] = tolower(word[i]);
       }
-      //cout << word << endl;
       wordVector.push_back(word);
     }
     return wordVector;
@@ -74,7 +72,6 @@ public:
 
     // Rotates the words in the vector
     for(int i=result.size(); i > 0; i--) {
-      //cout << vectorToString(result) << endl;
       // Stores the created lines in the instance of the object
       this->shiftedLines.push_back(vectorToString(result));
       rotate(result.begin(), result.begin()+1, result.end());
